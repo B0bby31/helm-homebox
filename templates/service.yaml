@@ -4,6 +4,9 @@ metadata:
   name: {{ include "homebox.fullname" . }}
   labels:
     {{- include "homebox.labels" . | nindent 4 }}
+  {{- if .Values.namespace }}
+  namespace: {{ .Values.namespace }}
+  {{- end }}
 spec:
   type: {{ .Values.service.type }}
   ports:

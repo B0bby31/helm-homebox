@@ -18,6 +18,9 @@ metadata:
   name: {{ $fullName }}
   labels:
     {{- include "homebox.labels" . | nindent 4 }}
+  {{- if .Values.namespace }}
+  namespace: {{ .Values.namespace }}
+  {{- end }}
   {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
