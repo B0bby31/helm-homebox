@@ -1,10 +1,10 @@
 # HomeBox
 
-An Helm chart to deploy [HomeBox](https://hay-kot.github.io/homebox/)
+An Helm chart to deploy [HomeBox](https://github.com/sysadminsmedia/homebox)
 
 ## Goal
 
-This repo contains an helm chart to help deploying HomeBox on Kubernetes cluster.
+This repo contains an helm chart to help deploying HomeBox on your Kubernetes cluster.
 
 ## Installation
 
@@ -15,3 +15,4 @@ $ git checkout https://github.com/nicolas2bonfils/helm-homebox.git
 $ cd helm-homebox
 $ helm install -n homebox homebox . -f values.yaml
 ```
+
