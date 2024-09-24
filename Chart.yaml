@@ -3,7 +3,7 @@ name: homebox
 description: A Helm chart for HomeBox
 type: application
 version: 0.1.0
-appVersion: "v0.8.2"
+appVersion: "0.14.0"
 maintainers:
 - email: opensource@nicolas2bonfils.com
   name: nicolas2bonfils
